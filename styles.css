@@ -1,0 +1,17 @@
+.navbar {
+}
+
+.code-img-container {
+  padding: 24px 0px 24px 0px;
+}
+.code-img-container > img {
+  width: 80vw;
+}
+
+.posted-by-container {
+  padding: 24px 0px 0px 0px;
+}
+#related-post-img {
+  width: 200px;
+  height: 200px;
+}
