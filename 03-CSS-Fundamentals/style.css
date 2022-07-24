@@ -21,6 +21,10 @@ nav a:link {
   font-size: 18px;
 }
 
+article {
+  margin-bottom: 50px;
+}
+
 article p:last-child {
   color: red;
 }
