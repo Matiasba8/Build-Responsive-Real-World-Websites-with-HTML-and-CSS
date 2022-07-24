@@ -6,6 +6,10 @@
 body {
   border-top: 10px solid #1098ad;
 }
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
 
 .main-header {
   height: 80px;
