@@ -55,3 +55,6 @@ li {
   font-size: 18px;
   font-weight: bold;
 }
+.related li {
+  list-style: none;
+}
