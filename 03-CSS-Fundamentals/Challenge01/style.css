@@ -21,6 +21,8 @@ h1 {
 }
 .add-to-cart {
   font-size: larger;
+
+  font-size: 20px;
   background-color: black;
   color: white;
 }
