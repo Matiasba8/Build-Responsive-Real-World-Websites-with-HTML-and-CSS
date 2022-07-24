@@ -8,6 +8,7 @@ body {
 }
 
 .main-header {
+  height: 80px;
   background-color: #f7f7f7;
   padding: 20px;
   margin-bottom: 60px;
@@ -30,6 +31,7 @@ article p:last-child {
 }
 
 aside {
+  width: 500px;
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
@@ -133,3 +135,8 @@ a:active {
   background-color: aquamarine;
 }
 /* LVHA */
+
+.post-img {
+  width: 100%;
+  height: auto; /* Sigue el aspect ratio de la image cunado se coloca en auto!!!*/
+}
