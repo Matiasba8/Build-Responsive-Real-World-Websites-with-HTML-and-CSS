@@ -87,3 +87,23 @@ li:last-child {
 article p:last-child {
   color: red;
 }
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: aquamarine;
+}
+/* LVHA */
