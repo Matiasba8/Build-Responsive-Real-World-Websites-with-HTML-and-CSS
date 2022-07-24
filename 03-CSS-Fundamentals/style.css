@@ -1,10 +1,5 @@
-h1,
-h2,
-h3,
-p,
-li {
-  font-family: sans-serif;
-  color: #444;
+body {
+  border-top: 10px solid #1098ad;
 }
 
 h1,
@@ -107,3 +102,7 @@ a:active {
   background-color: aquamarine;
 }
 /* LVHA */
+
+nav a:link {
+  font-size: 18px;
+}
