@@ -26,6 +26,7 @@ h1 {
   font-size: 20px;
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 .add-to-cart:hover {
   background-color: white;
