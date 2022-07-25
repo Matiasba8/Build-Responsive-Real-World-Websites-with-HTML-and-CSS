@@ -1,11 +1,55 @@
-h1,
-h2,
-h3,
-p,
-li {
-  font-family: sans-serif;
-  color: #444;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+/* Page Section */
+body {
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+nav a {
+  font-size: 18px;
+  display: inline-block;
+  margin: 8px 8px 0 0;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+nav a:last-child article {
+  margin-bottom: 50px;
+}
+
+article p:last-child {
+  color: red;
+}
+
+aside {
+  width: 500px;
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+}
+
+/* Smaller Elements */
 
 h1,
 h2,
@@ -21,10 +65,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -36,10 +83,17 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 10px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 /* footer p {
   font-size: 16px;
@@ -66,26 +120,13 @@ li {
   list-style: none;
 }
 
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-}
-
 li:first-child {
   font-weight: bold;
 }
 
 li:last-child {
   font-weight: bold;
-}
-
-article p:last-child {
-  color: red;
+  margin-bottom: 0;
 }
 
 a:link {
@@ -107,3 +148,18 @@ a:active {
   background-color: aquamarine;
 }
 /* LVHA */
+
+.post-img {
+  width: 100%;
+  height: auto; /* Sigue el aspect ratio de la image cunado se coloca en auto!!!*/
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
