@@ -3,8 +3,10 @@
   padding: 0;
 }
 
+/* Page Section */
 body {
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 .container {
   width: 700px;
@@ -12,7 +14,6 @@ body {
 }
 
 .main-header {
-  height: 80px;
   background-color: #f7f7f7;
   padding: 20px;
   margin-bottom: 60px;
@@ -22,11 +23,17 @@ body {
   margin-bottom: 40px;
 }
 
-nav a:link {
+nav a {
   font-size: 18px;
+  display: inline-block;
+  margin: 8px 8px 0 0;
 }
 
-article {
+nav a:last-child {
+  margin-right: 0;
+}
+
+nav a:last-child article {
   margin-bottom: 50px;
 }
 
@@ -41,6 +48,8 @@ aside {
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
 }
+
+/* Smaller Elements */
 
 h1,
 h2,
@@ -143,4 +152,14 @@ a:active {
 .post-img {
   width: 100%;
   height: auto; /* Sigue el aspect ratio de la image cunado se coloca en auto!!!*/
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }

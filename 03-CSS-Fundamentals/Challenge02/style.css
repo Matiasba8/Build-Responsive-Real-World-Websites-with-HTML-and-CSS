@@ -13,7 +13,7 @@ p {
 article {
   border: 5px solid black;
   width: 875px;
-  margin: 50px;
+  margin: 50px auto;
 }
 h1 {
   background-color: rgb(246, 241, 241);
