@@ -43,8 +43,8 @@ h2 {
   margin-bottom: 20px;
 }
 .container {
-  width: 500px;
-  height: 600px;
+  width: 830px;
+  height: fit-content;
 }
 
 .price {
@@ -71,6 +71,7 @@ h2 {
   background-color: black;
   width: 100%;
   cursor: pointer;
+  height: 46px;
 }
 
 .add-to-cart:hover {
@@ -127,8 +128,21 @@ ul {
 .brown {
   background-color: brown;
 }
+img {
+  float: left;
+  height: 230px;
+  width: auto;
+}
+
+.container-1 {
+  width: 348px;
+  margin-bottom: 16px;
+  margin-left: 24px;
+  float: left;
+}
 
 .container-2 {
   float: left;
-  margin-bottom: 8px;
+  width: 200px;
+  margin-bottom: 12px;
 }
