@@ -54,7 +54,7 @@ h2 {
 }
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 250px 1fr 1fr;
   width: 875px;
   column-gap: 30px;
   height: fit-content;
@@ -145,7 +145,7 @@ ul {
         */
 
 img {
-  width: 240px;
+  width: 100%;
   height: auto;
 }
 .product-info {
