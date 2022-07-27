@@ -27,7 +27,6 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
   /* height: 80px; */
   display: flex;
   align-items: center;
@@ -40,7 +39,7 @@ nav {
 }
 
 article {
-  flex: 1;
+  /* flex: 1; */
 }
 
 .post-header {
@@ -295,7 +294,7 @@ nav p {
 }
 
 article {
-  width: 825px;
+  /* width: 825px; */
   /* float: left; */
 }
 aside {
@@ -308,7 +307,7 @@ footer {
 }
 
 /* FLEXBOXS */
-.posted-by-container {
+/* .posted-by-container {
   display: flex;
   align-items: center;
 
@@ -335,4 +334,26 @@ footer {
   font-style: normal;
   display: block;
   margin-bottom: 5px;
+} */
+
+/* CSS GRID LAYOUT */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 100px;
+  align-items: start;
+  justify-items: center;
+}
+
+.main-header {
+  grid-column: 1/-1;
+}
+
+aside {
+}
+
+footer {
+  grid-column: 1/-1;
 }
