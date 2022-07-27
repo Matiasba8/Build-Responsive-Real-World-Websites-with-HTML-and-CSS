@@ -29,6 +29,9 @@ body {
   padding: 20px 40px;
   margin-bottom: 60px;
   /* height: 80px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav {
@@ -37,7 +40,7 @@ nav {
 }
 
 article {
-  margin-bottom: 60px;
+  flex: 1;
 }
 
 .post-header {
@@ -46,11 +49,24 @@ article {
 }
 
 aside {
+  /* DEFAULT
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto; 
+  */
+
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 40px;
-  width: 500px;
+
+  flex: 0 0 300px;
+}
+
+.row {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
 }
 
 /* SMALLER ELEMENTS */
@@ -198,7 +214,6 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -270,24 +285,54 @@ nav p {
 /* FLOATS */
 
 .author-img {
-  margin-bottom: 20px;
-  float: left;
+  /* margin-bottom: 20px; */
+  /* float: left; */
 }
 
 .author {
-  margin: 12px 0 0 16px;
-  float: right;
+  margin: 0 0 0 16px;
+  /* float: right; */
 }
 
 article {
   width: 825px;
-  float: left;
+  /* float: left; */
 }
 aside {
-  width: 300px;
-  float: right;
+  /* width: 300px; */
+  /* float: right; */
 }
 
 footer {
-  clear: both;
+  /* clear: both; */
+}
+
+/* FLEXBOXS */
+.posted-by-container {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
 }
