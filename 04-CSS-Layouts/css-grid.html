@@ -11,10 +11,13 @@
       }
       .el--2 {
         background-color: orangered;
+        /* grid-column: 1/2; */
+        /* grid-row: 2/3; */
       }
       .el--3 {
         background-color: green;
         height: 150px;
+        /* grid-column: 3/-1; */
       }
       .el--4 {
         background-color: goldenrod;
@@ -24,11 +27,15 @@
       }
       .el--6 {
         background-color: steelblue;
+        /* grid-column: 4/-1; */
+        /* grid-row: 2/4; */
       }
       .el--7 {
         background-color: yellow;
       }
       .el--8 {
+        /* grid-column: 2/3; */
+        /* grid-row: 1/2; */
         background-color: crimson;
       }
 
@@ -40,6 +47,13 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+        /* TEPM */
+        display: none;
       }
 
       .container--2 {
@@ -47,12 +61,24 @@
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
         width: 1000px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+
+        /* aligning tracks inside of container: distribute empty space */
+        justify-content: center; /*Horizonttal align center */
+        /* justify-content: space-between; */
+        align-content: center; /* Vertical align cententered in the grid */
+
+        /* aligning items INSIDE cells: moving items around inside cells */
+        align-items: center; /*align items is set by stech just like flexbox */
+        justify-items: center;
       }
     </style>
   </head>
